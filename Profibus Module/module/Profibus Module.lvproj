@@ -501,6 +501,7 @@ AddOutputFilter chunkFilter
 		<Item Name="Profibus channel.lvclass" Type="LVClass" URL="../channel/Profibus channel.lvclass"/>
 		<Item Name="Profibus Module configuration.lvclass" Type="LVClass" URL="../configuration/Profibus Module configuration.lvclass"/>
 		<Item Name="Profibus Module runtime.lvclass" Type="LVClass" URL="../execution/Profibus Module runtime.lvclass"/>
+		<Item Name="Profibus Module tests.lvlib" Type="Library" URL="../testing/Profibus Module tests.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="CS_cRIO-PB_DP-Master_FPGA-Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_FPGA-Reference.ctl"/>

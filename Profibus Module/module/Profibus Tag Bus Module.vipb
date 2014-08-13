@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-08-13 18:35:44" Creator="Daniel" Comments="" ID="51abd5a6158580bc3727314e2d6058dd">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-08-13 18:46:56" Creator="Daniel" Comments="" ID="60075cb5672da195a30ad419d610cd94">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_profi</Package_File_Name>
-    <Library_Version>1.0.1.7</Library_Version>
+    <Library_Version>1.0.1.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\package releases\profibus\module</Library_Output_Folder>

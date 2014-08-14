@@ -8,6 +8,8 @@
 *.so.*
 *.dylib
 
+*.lvbitx
+
 # Executables
 *.exe
 

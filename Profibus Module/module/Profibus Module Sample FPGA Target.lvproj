@@ -498,16 +498,10 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
+		<Item Name="dynamic profibus.lvlib" Type="Library" URL="../dynamic profibus/dynamic profibus.lvlib"/>
 		<Item Name="Profibus Module runtime.lvclass" Type="LVClass" URL="../execution/Profibus Module runtime.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="CS_cRIO-PB_DP-Master_FPGA-Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_FPGA-Reference.ctl"/>
-				<Item Name="CS_cRIO-PB_DP-Master_ProcessData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_ProcessData.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_ReadWrite.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_ReadWrite.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_SlaveDiagData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_SlaveDiagData.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_SlaveInfo.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_SlaveInfo.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_StartStop.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_StartStop.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Slave_ReadWriteError.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Slave_ReadWriteError.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="tag bus.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus/tag bus.lvlib"/>
 				<Item Name="TBM channel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/channel/TBM channel.lvclass"/>
@@ -518,12 +512,36 @@ AddOutputFilter chunkFilter
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="CS_PB_DP_SlaveDiagData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DP_SlaveDiagData.ctl"/>
+			<Item Name="CS_PB_DP_SlaveDiagResData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DP_SlaveDiagResData.vi"/>
+			<Item Name="CS_PB_DPV1_AbortIndData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_AbortIndData.ctl"/>
+			<Item Name="CS_PB_DPV1_AbortReqData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_AbortReqData.ctl"/>
+			<Item Name="CS_PB_DPV1_AbortReqData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_AbortReqData.vi"/>
+			<Item Name="CS_PB_DPV1_AbortResData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_AbortResData.vi"/>
+			<Item Name="CS_PB_DPV1_ErrorData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_ErrorData.ctl"/>
+			<Item Name="CS_PB_DPV1_InitiateConData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_InitiateConData.ctl"/>
+			<Item Name="CS_PB_DPV1_InitiateReqData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_InitiateReqData.ctl"/>
+			<Item Name="CS_PB_DPV1_InitiateReqData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_InitiateReqData.vi"/>
+			<Item Name="CS_PB_DPV1_InitiateResData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_InitiateResData.ctl"/>
+			<Item Name="CS_PB_DPV1_InitiateResData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_InitiateResData.vi"/>
+			<Item Name="CS_PB_DPV1_ReadConData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_ReadConData.ctl"/>
+			<Item Name="CS_PB_DPV1_ReadReqData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_ReadReqData.ctl"/>
+			<Item Name="CS_PB_DPV1_ReadReqData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_ReadReqData.vi"/>
+			<Item Name="CS_PB_DPV1_ReadResData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_ReadResData.ctl"/>
+			<Item Name="CS_PB_DPV1_ReadResData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_ReadResData.vi"/>
+			<Item Name="CS_PB_DPV1_Result.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_Result.ctl"/>
+			<Item Name="CS_PB_DPV1_WriteConData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_WriteConData.ctl"/>
+			<Item Name="CS_PB_DPV1_WriteReqData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_WriteReqData.ctl"/>
+			<Item Name="CS_PB_DPV1_WriteReqData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_WriteReqData.vi"/>
+			<Item Name="CS_PB_DPV1_WriteResData.ctl" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_WriteResData.ctl"/>
+			<Item Name="CS_PB_DPV1_WriteResData.vi" Type="VI" URL="../dynamic profibus/Examples/SubVIs/CS_PB_DPV1_WriteResData.vi"/>
 			<Item Name="niFpgaDynamicAddResources.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/dynamic/niFpgaDynamicAddResources.vi"/>
 			<Item Name="niFpgaHostInterfaceSession.ctl" Type="VI" URL="../../../../../Program Files (x86)/National Instruments/LabVIEW 2013/Targets/NI/FPGA/StockFPGA_IntfPrivate/ScriptTemplates/niFpgaHostInterfaceSession.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niFpgaSimulationCallBeginRW.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/Simulation/niFpgaSimulationCallBeginRW.vi"/>
 			<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
 			<Item Name="niLvFpga_Close_Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/Dynamic/niLvFpga_Close_Dynamic.vi"/>
 			<Item Name="niLvFpga_Open_cRIO-9068.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9068/niLvFpga_Open_cRIO-9068.vi"/>
@@ -538,7 +556,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
 			<Item Name="Profibus channel.lvclass" Type="LVClass" URL="../channel/Profibus channel.lvclass"/>
 			<Item Name="Profibus Module configuration.lvclass" Type="LVClass" URL="../configuration/Profibus Module configuration.lvclass"/>
-			<Item Name="ProfibusModule_FPGATarget_FPGAMain_98nU8AqzUJM.lvbitx" Type="Document" URL="../FPGA Bitfiles/ProfibusModule_FPGATarget_FPGAMain_98nU8AqzUJM.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

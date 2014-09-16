@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-08-22 17:29:07" Creator="Daniel" Comments="" ID="e4911b8d4d7346166ea5cf78f310b76d">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-09-16 18:07:12" Creator="Daniel" Comments="" ID="973a8472ceb6d4908069dfcb4529260b">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_profi</Package_File_Name>
-    <Library_Version>1.0.1.9</Library_Version>
+    <Library_Version>1.1.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\releases\modules\profibus</Library_Output_Folder>
@@ -108,9 +108,6 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Exclusions>
-        <Path>FPGA Bitfiles</Path>
-      </Exclusions>
       <Exclusions>
         <Path>testing</Path>
       </Exclusions>

@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-10-08 18:04:48" Creator="Daniel" Comments="" ID="708fba4510e3507a3063ce99f95e993d">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-10-09 16:04:13" Creator="Daniel" Comments="" ID="ac51da690d07125695e9aacbf3541f3d">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_profi</Package_File_Name>
-    <Library_Version>1.1.1.3</Library_Version>
+    <Library_Version>1.1.2.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\releases\modules\profibus</Library_Output_Folder>
@@ -34,7 +34,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>close no longer closes the bitfile</Release_Notes>
+      <Release_Notes>added support for U8, I8, U32, U64</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>

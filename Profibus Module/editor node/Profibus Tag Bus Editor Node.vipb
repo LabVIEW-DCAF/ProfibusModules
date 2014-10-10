@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-10-09 14:40:09" Creator="Daniel" Comments="" ID="b99346efc2bd497f8cbcf5d139296ebb">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-10-10 13:31:22" Creator="Daniel" Comments="" ID="eccb2fae551e1f122d0da8f60a894be1">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_edit_profi</Package_File_Name>
-    <Library_Version>1.1.1.5</Library_Version>
+    <Library_Version>1.2.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\releases\modules\profibus</Library_Output_Folder>
@@ -35,7 +35,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>remove race condition with refresh event</Release_Notes>
+      <Release_Notes>add endianness support</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>

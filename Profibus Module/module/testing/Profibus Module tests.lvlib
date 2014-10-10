@@ -10,6 +10,7 @@
 	<Item Name="channel operation tests.vi" Type="VI" URL="../channel operation tests.vi"/>
 	<Item Name="create channels for testing.vi" Type="VI" URL="../create channels for testing.vi"/>
 	<Item Name="create initialized module for testing.vi" Type="VI" URL="../create initialized module for testing.vi"/>
+	<Item Name="endianness test.vi" Type="VI" URL="../endianness test.vi"/>
 	<Item Name="example test.vi" Type="VI" URL="../example test.vi"/>
 	<Item Name="init runtime test.vi" Type="VI" URL="../init runtime test.vi"/>
 	<Item Name="modify channel test.vi" Type="VI" URL="../modify channel test.vi"/>

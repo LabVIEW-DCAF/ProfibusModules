@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+
+<nifamily familyname="Profibus Tag Bus Module" displayname="My Error Range">
+</nifamily>
+</nicomment>
+<nierror code="538450">
+Diagnostic data returned does not match the expected slave.
+</nierror>
+</nidocument>

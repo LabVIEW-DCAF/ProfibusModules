@@ -544,10 +544,6 @@ AddOutputFilter chunkFilter
 				<Item Name="CS_PB_DPV1_WriteResData.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/Examples/SubVIs/CS_PB_DPV1_WriteResData.ctl"/>
 				<Item Name="CS_PB_DPV1_WriteResData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/Examples/SubVIs/CS_PB_DPV1_WriteResData.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="EthernetIP Channel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/TBM Modules/Ethernet IP/channel/EthernetIP Channel.lvclass"/>
-				<Item Name="EthernetIP configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/TBM Modules/Ethernet IP/configuration/EthernetIP configuration.lvclass"/>
-				<Item Name="EthernetIP runtime.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/TBM Modules/Ethernet IP/execution/EthernetIP runtime.lvclass"/>
-				<Item Name="ethernetip.lvlib" Type="Library" URL="/&lt;vilib&gt;/ethernetip/ethernetip.lvlib"/>
 				<Item Name="FPGA manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/FPGA manager/FPGA manager.lvlib"/>
 				<Item Name="tag bus.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus/tag bus.lvlib"/>
 				<Item Name="TBM channel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/channel/TBM channel.lvclass"/>
@@ -560,6 +556,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niFpgaSimulationCallBeginRW.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/Simulation/niFpgaSimulationCallBeginRW.vi"/>
 			<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
 			<Item Name="niLvFpga_Close_Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/Dynamic/niLvFpga_Close_Dynamic.vi"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>

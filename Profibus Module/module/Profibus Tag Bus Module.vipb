@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-10-15 17:40:12" Creator="Daniel" Comments="" ID="5e21e93be437deab8c598bd092d539d2">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2014-10-22 14:34:46" Creator="Daniel" Comments="" ID="afe51218da100daa15004789fc3d3876">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_profi</Package_File_Name>
-    <Library_Version>1.3.0.2</Library_Version>
+    <Library_Version>1.3.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\..\releases\modules\profibus</Library_Output_Folder>
@@ -34,7 +34,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>added support for diagnostic information</Release_Notes>
+      <Release_Notes>Added suport for U8 ARRAY in suported datatypes</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>

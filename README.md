@@ -1,8 +1,3 @@
-#TBD Modules
-================
-####The collection of plugins which derive from the module interface
-================
-#####*This repository and any materials provided by NI therein are provided AS IS. NI DISCLAIMS ANY AND ALL LIABILITIES FOR AND MAKES NO WARRANTIES, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR  PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF INTELLECTUAL PROPERTY. NI shall have no liability for any direct, indirect, incidental, punitive, special, or consequential damages for your use of the repository or any materials contained therein.*
-================
+#Profibus module
 
-View the branches to take a look at each individual module
+In order for this module to work, your engine project (RT Main) must include a FPGA with the provided profibus main bitfile. A sample project, Profibus Module Sample FPGA Target.lvproj, exists and can be used to copy the target into your project.

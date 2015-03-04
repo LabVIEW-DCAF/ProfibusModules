@@ -4,8 +4,12 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">318799872</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Item Name="commit request.vi" Type="VI" URL="../commit request.vi"/>
+	<Item Name="commit.vi" Type="VI" URL="../commit.vi"/>
+	<Item Name="create diagnostic request.vi" Type="VI" URL="../create diagnostic request.vi"/>
+	<Item Name="create input request.vi" Type="VI" URL="../create input request.vi"/>
 	<Item Name="CS_cRIO-PB_DP-Master_CyclicSlaveDiagData.vi" Type="VI" URL="../CS_cRIO-PB_DP-Master_CyclicSlaveDiagData.vi"/>
-	<Item Name="CS_cRIO-PB_DP-Master_FPGA-Reference.ctl" Type="VI" URL="../CS_cRIO-PB_DP-Master_FPGA-Reference.ctl"/>
 	<Item Name="CS_cRIO-PB_DP-Master_ModuleProperties.vi" Type="VI" URL="../CS_cRIO-PB_DP-Master_ModuleProperties.vi"/>
 	<Item Name="CS_cRIO-PB_DP-Master_ProcessData.vi" Type="VI" URL="../CS_cRIO-PB_DP-Master_ProcessData.vi"/>
 	<Item Name="CS_cRIO-PB_DP-Master_ReadWrite.vi" Type="VI" URL="../CS_cRIO-PB_DP-Master_ReadWrite.vi"/>
@@ -25,4 +29,20 @@
 	<Item Name="CS_cRIO-PB_MSAC2_DPV1-ReadReq.vi" Type="VI" URL="../CS_cRIO-PB_MSAC2_DPV1-ReadReq.vi"/>
 	<Item Name="CS_cRIO-PB_MSAC2_DPV1-ReadWrite.vi" Type="VI" URL="../CS_cRIO-PB_MSAC2_DPV1-ReadWrite.vi"/>
 	<Item Name="CS_cRIO-PB_MSAC2_DPV1-WriteReq.vi" Type="VI" URL="../CS_cRIO-PB_MSAC2_DPV1-WriteReq.vi"/>
+	<Item Name="diagnostic request.ctl" Type="VI" URL="../diagnostic request.ctl"/>
+	<Item Name="fpga reference.ctl" Type="VI" URL="../fpga reference.ctl"/>
+	<Item Name="generate header.vi" Type="VI" URL="../generate header.vi"/>
+	<Item Name="generate outputs.vi" Type="VI" URL="../generate outputs.vi"/>
+	<Item Name="request diagnostics.vi" Type="VI" URL="../request diagnostics.vi"/>
+	<Item Name="input request.ctl" Type="VI" URL="../input request.ctl"/>
+	<Item Name="dataset.ctl" Type="VI" URL="../dataset.ctl"/>
+	<Item Name="request inputs.vi" Type="VI" URL="../request inputs.vi"/>
+	<Item Name="set outputs.vi" Type="VI" URL="../set outputs.vi"/>
+	<Item Name="start.vi" Type="VI" URL="../start.vi"/>
+	<Item Name="input data.ctl" Type="VI" URL="../input data.ctl"/>
+	<Item Name="stop.vi" Type="VI" URL="../stop.vi"/>
+	<Item Name="wait for ready.vi" Type="VI" URL="../wait for ready.vi"/>
+	<Item Name="read inputs.vi" Type="VI" URL="../read inputs.vi"/>
+	<Item Name="get lengths.vi" Type="VI" URL="../get lengths.vi"/>
+	<Item Name="read input state machine.ctl" Type="VI" URL="../read input state machine.ctl"/>
 </Library>

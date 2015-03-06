@@ -122,13 +122,6 @@
 			<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
 			<Item Name="niLvFpga_Close_Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/Dynamic/niLvFpga_Close_Dynamic.vi"/>
 			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="niLvFpga_ReadFifo_Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/Dynamic/niLvFpga_ReadFifo_Dynamic.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="niLvFpgaMergeErrorWithErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaMergeErrorWithErrorCode.vi"/>
-			<Item Name="niLvFpga_WriteFifo_Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/Dynamic/niLvFpga_WriteFifo_Dynamic.vi"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -596,6 +589,7 @@ AddOutputFilter chunkFilter
 					<Item Name="vi.lib" Type="Folder">
 						<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 						<Item Name="NISE_CEF_TreeControl.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Configuration Framework/NISE_CEF_TreeControl.lvlib"/>
+						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 					</Item>
 					<Item Name="dynamic profibus.lvlib" Type="Library" URL="../dynamic profibus/dynamic profibus.lvlib"/>
 					<Item Name="niFpgaGetScratchAppInstance.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/niFpgaGetScratchAppInstance.vi"/>
@@ -1095,6 +1089,7 @@ AddOutputFilter chunkFilter
 				<Item Name="Dependencies" Type="Dependencies">
 					<Item Name="vi.lib" Type="Folder">
 						<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 						<Item Name="NISE_CEF_TreeControl.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Configuration Framework/NISE_CEF_TreeControl.lvlib"/>
 					</Item>
 					<Item Name="dynamic profibus.lvlib" Type="Library" URL="../dynamic profibus/dynamic profibus.lvlib"/>
@@ -1643,9 +1638,6 @@ AddOutputFilter chunkFilter
 					<Item Name="niFpgaGetClockAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaGetClockAttributes.vi"/>
 					<Item Name="niFpgaGetClockAttributesFromContext.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaGetClockAttributesFromContext.vi"/>
 					<Item Name="niFpgaGetScratchAppInstance.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/niFpgaGetScratchAppInstance.vi"/>
-					<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-						<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-					</Item>
 					<Item Name="niFpgaProcessEmulError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaProcessEmulError.vi"/>
 					<Item Name="niFpgaSctlEmulationGetInTimedLoop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaSctlEmulationGetInTimedLoop.vi"/>
 					<Item Name="niFpgaSetErrorForExecOnDevCompSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaSetErrorForExecOnDevCompSimple.vi"/>
@@ -1706,14 +1698,11 @@ AddOutputFilter chunkFilter
 				<Item Name="NISE_CEF_TreeControl.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Configuration Framework/NISE_CEF_TreeControl.lvlib"/>
 			</Item>
 			<Item Name="dynamic profibus.lvlib" Type="Library" URL="../dynamic profibus/dynamic profibus.lvlib"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
-	<Item Name="RT CompactRIO Target 2" Type="RT CompactRIO">
-		<Property Name="alias.name" Type="Str">RT CompactRIO Target 2</Property>
+	<Item Name="RT CompactRIO 9074" Type="RT CompactRIO">
+		<Property Name="alias.name" Type="Str">RT CompactRIO 9074</Property>
 		<Property Name="alias.value" Type="Str">0.0.0.0</Property>
 		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,VxWorks;CPU,PowerPC;DeviceCode,729D;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">729D</Property>
@@ -1767,10 +1756,10 @@ AddOutputFilter chunkFilter
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
 			<Property Name="crio.Type" Type="Str">cRIO-9074</Property>
-			<Item Name="FPGA Target 2" Type="FPGA Target">
+			<Item Name="FPGA 9074" Type="FPGA Target">
 				<Property Name="AutoRun" Type="Bool">false</Property>
-				<Property Name="configString.guid" Type="Str">{0FF83701-691A-451D-BFB9-7A7E0502F327}resource=/System Reset;0;ReadMethodType=bool;WriteMethodType=bool{91197760-BD4F-4DBA-9E02-6595480C3FF0}resource=/FPGA LED;0;ReadMethodType=bool;WriteMethodType=bool{965C954D-ED1F-4E70-BBBF-94A5D5CCCE49}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E{AD9C4A32-3AD7-42E1-AD90-58ECE7326D61}resource=/Scan Clock;0;ReadMethodType=bool{BF81E466-B7A1-43AE-80A5-8EC2609DFC7F}resource=/Sleep;0;ReadMethodType=bool;WriteMethodType=bool{C6113C07-B5B1-4BB0-B9B8-B5338F71CB06}resource=/Chassis Temperature;0;ReadMethodType=i16cRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-				<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427EChassis Temperatureresource=/Chassis Temperature;0;ReadMethodType=i16cRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]FPGA LEDresource=/FPGA LED;0;ReadMethodType=bool;WriteMethodType=boolScan Clockresource=/Scan Clock;0;ReadMethodType=boolSleepresource=/Sleep;0;ReadMethodType=bool;WriteMethodType=boolSystem Resetresource=/System Reset;0;ReadMethodType=bool;WriteMethodType=bool</Property>
+				<Property Name="configString.guid" Type="Str">{02A2A6D2-AA0C-4828-A0F9-40F310AC17FB}resource=/crio_Mod1/DIO7_UNIQUE_275;0;ReadMethodType=bool;WriteMethodType=bool{08C8A962-53DA-4156-9C3D-F8E045ECEB0D}resource=/crio_Mod1/Configuration Interface_UNIQUE_2313;0{0FF83701-691A-451D-BFB9-7A7E0502F327}resource=/System Reset;0;ReadMethodType=bool;WriteMethodType=bool{18553CDA-C265-40DE-A00B-D8A8920DCCF5}cRIO Subresource{1A7ED99B-E44B-4B22-A66E-B6A6C494C169}resource=/crio_Mod1/ProcInOutInfoChn_UNIQUE_1576;0{1D637AF3-41B7-4554-B63B-394AF874A93C}resource=/crio_Mod1/Command Interface_UNIQUE_1648;0{291AC52B-243F-4C18-91D1-1318929D95B2}resource=/crio_Mod1/AcyclicResIndicationChn_UNIQUE_2301;0{2A84058E-BEF9-4B3F-BCF3-5CAF2A29BE5E}"ControlLogic=0;NumberOfElements=2053;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToFPGA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{34C69109-1D87-4DB1-BC77-21DE882956BA}resource=/crio_Mod1/Debug Interface_UNIQUE_1432;0{39FEFA7E-A998-4FC8-8CA1-146FB55017C8}resource=/crio_Mod1/DIO0_UNIQUE_268;0;ReadMethodType=bool;WriteMethodType=bool{3F98DFBB-06C1-400E-8972-77FE50EBF1EC}resource=/crio_Mod1/Timing Interface_UNIQUE_1561;0{4B156214-99EB-4061-95BE-8774FEA15A43}cRIO Subresource{4C19924A-93B6-464C-8AB8-0369E5219E5C}resource=/crio_Mod1/DPV1-CommandChn_UNIQUE_1312;0{5C7CC19A-A7DA-4303-971D-84AFC3263761}resource=/crio_Mod1/DIO8_UNIQUE_276;0;ReadMethodType=bool;WriteMethodType=bool{5FCAB79C-F456-4F85-AE9D-BE64AF2BC16A}resource=/crio_Mod1/DIO6_UNIQUE_274;0;ReadMethodType=bool;WriteMethodType=bool{60A1C962-4754-401D-A8E7-7E8C8B7CFA85}resource=/crio_Mod1/DIO3_UNIQUE_271;0;ReadMethodType=bool;WriteMethodType=bool{72D1B5A9-AC7B-4064-A3E8-331B19024E5F}resource=/crio_Mod1/DIO5_UNIQUE_273;0;ReadMethodType=bool;WriteMethodType=bool{78D83851-1332-42D0-AE33-C57DAB5D86A6}resource=/crio_Mod1/ModuleErrorChn_UNIQUE_1417;0{91197760-BD4F-4DBA-9E02-6595480C3FF0}resource=/FPGA LED;0;ReadMethodType=bool;WriteMethodType=bool{965C954D-ED1F-4E70-BBBF-94A5D5CCCE49}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E{9EF158AC-F19A-4B9B-9954-06E5C865BF9F}resource=/crio_Mod1/DIO(7:0)_UNIQUE_462;0;ReadMethodType=u8;WriteMethodType=u8{A85DE5BD-CE6E-474C-B3D9-9886D32D5566}resource=/crio_Mod1/DIO4_UNIQUE_272;0;ReadMethodType=bool;WriteMethodType=bool{AB340561-AC68-41F0-A1FB-709076D6E77B}resource=/crio_Mod1/ReqDataChn_UNIQUE_955;0{AD9C4A32-3AD7-42E1-AD90-58ECE7326D61}resource=/Scan Clock;0;ReadMethodType=bool{BF81E466-B7A1-43AE-80A5-8EC2609DFC7F}resource=/Sleep;0;ReadMethodType=bool;WriteMethodType=bool{C4324E42-C8CC-446B-9249-9F9C86F3F3A0}"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToHost;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{C6113C07-B5B1-4BB0-B9B8-B5338F71CB06}resource=/Chassis Temperature;0;ReadMethodType=i16{CF5405B1-4989-4234-B740-FF91E5F8E23A}resource=/crio_Mod1/StartupStatusChn_UNIQUE_1680;0{D1C3BCCE-A177-4BF5-9302-2D1B0D8C5272}resource=/crio_Mod1/AutoSlaveModeChn_UNIQUE_1586;0{D78C6396-715E-4F3E-91FA-BD81E0B428B8}[crioConfig.Begin]crio.Calibration=1,crio.Location=Slot 1,crio.Type=CS_cRIO-PBMS[crioConfig.End]{D88DF703-1402-41B6-B04F-FDE6728E7936}cRIO Subresource{D9FB5292-B204-49BB-AACF-4E628D545DC1}resource=/crio_Mod1/Status Interface_UNIQUE_1589;0{DB65305A-E11C-48B3-B58D-C2B825149D2F}resource=/crio_Mod1/ResDataChn_UNIQUE_957;0{ED827093-E399-44E0-9901-DAE5790473E5}resource=/crio_Mod1/DIO1_UNIQUE_269;0;ReadMethodType=bool;WriteMethodType=bool{F79995E6-1A05-4A78-9135-A1E4534CE1D7}resource=/crio_Mod1/DIO2_UNIQUE_270;0;ReadMethodType=bool;WriteMethodType=boolcRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427EChassis Temperatureresource=/Chassis Temperature;0;ReadMethodType=i16cRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]DP-MastercRIO SubresourceDP-SlavecRIO SubresourceDPV1-MastercRIO SubresourceFPGA LEDresource=/FPGA LED;0;ReadMethodType=bool;WriteMethodType=boolMod1/AcyclicResIndicationChn_UNIQUE_2301resource=/crio_Mod1/AcyclicResIndicationChn_UNIQUE_2301;0Mod1/AutoSlaveModeChn_UNIQUE_1586resource=/crio_Mod1/AutoSlaveModeChn_UNIQUE_1586;0Mod1/Command Interface_UNIQUE_1648resource=/crio_Mod1/Command Interface_UNIQUE_1648;0Mod1/Configuration Interface_UNIQUE_2313resource=/crio_Mod1/Configuration Interface_UNIQUE_2313;0Mod1/Debug Interface_UNIQUE_1432resource=/crio_Mod1/Debug Interface_UNIQUE_1432;0Mod1/DIO(7:0)_UNIQUE_462resource=/crio_Mod1/DIO(7:0)_UNIQUE_462;0;ReadMethodType=u8;WriteMethodType=u8Mod1/DIO0_UNIQUE_268resource=/crio_Mod1/DIO0_UNIQUE_268;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO1_UNIQUE_269resource=/crio_Mod1/DIO1_UNIQUE_269;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO2_UNIQUE_270resource=/crio_Mod1/DIO2_UNIQUE_270;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO3_UNIQUE_271resource=/crio_Mod1/DIO3_UNIQUE_271;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO4_UNIQUE_272resource=/crio_Mod1/DIO4_UNIQUE_272;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO5_UNIQUE_273resource=/crio_Mod1/DIO5_UNIQUE_273;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO6_UNIQUE_274resource=/crio_Mod1/DIO6_UNIQUE_274;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO7_UNIQUE_275resource=/crio_Mod1/DIO7_UNIQUE_275;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO8_UNIQUE_276resource=/crio_Mod1/DIO8_UNIQUE_276;0;ReadMethodType=bool;WriteMethodType=boolMod1/DPV1-CommandChn_UNIQUE_1312resource=/crio_Mod1/DPV1-CommandChn_UNIQUE_1312;0Mod1/ModuleErrorChn_UNIQUE_1417resource=/crio_Mod1/ModuleErrorChn_UNIQUE_1417;0Mod1/ProcInOutInfoChn_UNIQUE_1576resource=/crio_Mod1/ProcInOutInfoChn_UNIQUE_1576;0Mod1/ReqDataChn_UNIQUE_955resource=/crio_Mod1/ReqDataChn_UNIQUE_955;0Mod1/ResDataChn_UNIQUE_957resource=/crio_Mod1/ResDataChn_UNIQUE_957;0Mod1/StartupStatusChn_UNIQUE_1680resource=/crio_Mod1/StartupStatusChn_UNIQUE_1680;0Mod1/Status Interface_UNIQUE_1589resource=/crio_Mod1/Status Interface_UNIQUE_1589;0Mod1/Timing Interface_UNIQUE_1561resource=/crio_Mod1/Timing Interface_UNIQUE_1561;0Mod1[crioConfig.Begin]crio.Calibration=1,crio.Location=Slot 1,crio.Type=CS_cRIO-PBMS[crioConfig.End]Scan Clockresource=/Scan Clock;0;ReadMethodType=boolSleepresource=/Sleep;0;ReadMethodType=bool;WriteMethodType=boolSystem Resetresource=/System Reset;0;ReadMethodType=bool;WriteMethodType=boolToFPGA"ControlLogic=0;NumberOfElements=2053;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToFPGA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"ToHost"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToHost;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">cRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
@@ -1842,8 +1831,310 @@ AddOutputFilter chunkFilter
 					<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
 					<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
 				</Item>
+				<Item Name="FPGA Main.vi" Type="VI" URL="../execution/FPGA Main.vi">
+					<Property Name="BuildSpec" Type="Str">{F4527596-AB90-4312-B9CE-4563BECE604B}</Property>
+					<Property Name="configString.guid" Type="Str">{02A2A6D2-AA0C-4828-A0F9-40F310AC17FB}resource=/crio_Mod1/DIO7_UNIQUE_275;0;ReadMethodType=bool;WriteMethodType=bool{08C8A962-53DA-4156-9C3D-F8E045ECEB0D}resource=/crio_Mod1/Configuration Interface_UNIQUE_2313;0{0FF83701-691A-451D-BFB9-7A7E0502F327}resource=/System Reset;0;ReadMethodType=bool;WriteMethodType=bool{18553CDA-C265-40DE-A00B-D8A8920DCCF5}cRIO Subresource{1A7ED99B-E44B-4B22-A66E-B6A6C494C169}resource=/crio_Mod1/ProcInOutInfoChn_UNIQUE_1576;0{1D637AF3-41B7-4554-B63B-394AF874A93C}resource=/crio_Mod1/Command Interface_UNIQUE_1648;0{291AC52B-243F-4C18-91D1-1318929D95B2}resource=/crio_Mod1/AcyclicResIndicationChn_UNIQUE_2301;0{2A84058E-BEF9-4B3F-BCF3-5CAF2A29BE5E}"ControlLogic=0;NumberOfElements=2053;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToFPGA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{34C69109-1D87-4DB1-BC77-21DE882956BA}resource=/crio_Mod1/Debug Interface_UNIQUE_1432;0{39FEFA7E-A998-4FC8-8CA1-146FB55017C8}resource=/crio_Mod1/DIO0_UNIQUE_268;0;ReadMethodType=bool;WriteMethodType=bool{3F98DFBB-06C1-400E-8972-77FE50EBF1EC}resource=/crio_Mod1/Timing Interface_UNIQUE_1561;0{4B156214-99EB-4061-95BE-8774FEA15A43}cRIO Subresource{4C19924A-93B6-464C-8AB8-0369E5219E5C}resource=/crio_Mod1/DPV1-CommandChn_UNIQUE_1312;0{5C7CC19A-A7DA-4303-971D-84AFC3263761}resource=/crio_Mod1/DIO8_UNIQUE_276;0;ReadMethodType=bool;WriteMethodType=bool{5FCAB79C-F456-4F85-AE9D-BE64AF2BC16A}resource=/crio_Mod1/DIO6_UNIQUE_274;0;ReadMethodType=bool;WriteMethodType=bool{60A1C962-4754-401D-A8E7-7E8C8B7CFA85}resource=/crio_Mod1/DIO3_UNIQUE_271;0;ReadMethodType=bool;WriteMethodType=bool{72D1B5A9-AC7B-4064-A3E8-331B19024E5F}resource=/crio_Mod1/DIO5_UNIQUE_273;0;ReadMethodType=bool;WriteMethodType=bool{78D83851-1332-42D0-AE33-C57DAB5D86A6}resource=/crio_Mod1/ModuleErrorChn_UNIQUE_1417;0{91197760-BD4F-4DBA-9E02-6595480C3FF0}resource=/FPGA LED;0;ReadMethodType=bool;WriteMethodType=bool{965C954D-ED1F-4E70-BBBF-94A5D5CCCE49}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E{9EF158AC-F19A-4B9B-9954-06E5C865BF9F}resource=/crio_Mod1/DIO(7:0)_UNIQUE_462;0;ReadMethodType=u8;WriteMethodType=u8{A85DE5BD-CE6E-474C-B3D9-9886D32D5566}resource=/crio_Mod1/DIO4_UNIQUE_272;0;ReadMethodType=bool;WriteMethodType=bool{AB340561-AC68-41F0-A1FB-709076D6E77B}resource=/crio_Mod1/ReqDataChn_UNIQUE_955;0{AD9C4A32-3AD7-42E1-AD90-58ECE7326D61}resource=/Scan Clock;0;ReadMethodType=bool{BF81E466-B7A1-43AE-80A5-8EC2609DFC7F}resource=/Sleep;0;ReadMethodType=bool;WriteMethodType=bool{C4324E42-C8CC-446B-9249-9F9C86F3F3A0}"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToHost;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{C6113C07-B5B1-4BB0-B9B8-B5338F71CB06}resource=/Chassis Temperature;0;ReadMethodType=i16{CF5405B1-4989-4234-B740-FF91E5F8E23A}resource=/crio_Mod1/StartupStatusChn_UNIQUE_1680;0{D1C3BCCE-A177-4BF5-9302-2D1B0D8C5272}resource=/crio_Mod1/AutoSlaveModeChn_UNIQUE_1586;0{D78C6396-715E-4F3E-91FA-BD81E0B428B8}[crioConfig.Begin]crio.Calibration=1,crio.Location=Slot 1,crio.Type=CS_cRIO-PBMS[crioConfig.End]{D88DF703-1402-41B6-B04F-FDE6728E7936}cRIO Subresource{D9FB5292-B204-49BB-AACF-4E628D545DC1}resource=/crio_Mod1/Status Interface_UNIQUE_1589;0{DB65305A-E11C-48B3-B58D-C2B825149D2F}resource=/crio_Mod1/ResDataChn_UNIQUE_957;0{ED827093-E399-44E0-9901-DAE5790473E5}resource=/crio_Mod1/DIO1_UNIQUE_269;0;ReadMethodType=bool;WriteMethodType=bool{F79995E6-1A05-4A78-9135-A1E4534CE1D7}resource=/crio_Mod1/DIO2_UNIQUE_270;0;ReadMethodType=bool;WriteMethodType=boolcRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+					<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427EChassis Temperatureresource=/Chassis Temperature;0;ReadMethodType=i16cRIO-9074/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9074FPGA_TARGET_FAMILYSPARTAN3TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]DP-MastercRIO SubresourceDP-SlavecRIO SubresourceDPV1-MastercRIO SubresourceFPGA LEDresource=/FPGA LED;0;ReadMethodType=bool;WriteMethodType=boolMod1/AcyclicResIndicationChn_UNIQUE_2301resource=/crio_Mod1/AcyclicResIndicationChn_UNIQUE_2301;0Mod1/AutoSlaveModeChn_UNIQUE_1586resource=/crio_Mod1/AutoSlaveModeChn_UNIQUE_1586;0Mod1/Command Interface_UNIQUE_1648resource=/crio_Mod1/Command Interface_UNIQUE_1648;0Mod1/Configuration Interface_UNIQUE_2313resource=/crio_Mod1/Configuration Interface_UNIQUE_2313;0Mod1/Debug Interface_UNIQUE_1432resource=/crio_Mod1/Debug Interface_UNIQUE_1432;0Mod1/DIO(7:0)_UNIQUE_462resource=/crio_Mod1/DIO(7:0)_UNIQUE_462;0;ReadMethodType=u8;WriteMethodType=u8Mod1/DIO0_UNIQUE_268resource=/crio_Mod1/DIO0_UNIQUE_268;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO1_UNIQUE_269resource=/crio_Mod1/DIO1_UNIQUE_269;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO2_UNIQUE_270resource=/crio_Mod1/DIO2_UNIQUE_270;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO3_UNIQUE_271resource=/crio_Mod1/DIO3_UNIQUE_271;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO4_UNIQUE_272resource=/crio_Mod1/DIO4_UNIQUE_272;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO5_UNIQUE_273resource=/crio_Mod1/DIO5_UNIQUE_273;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO6_UNIQUE_274resource=/crio_Mod1/DIO6_UNIQUE_274;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO7_UNIQUE_275resource=/crio_Mod1/DIO7_UNIQUE_275;0;ReadMethodType=bool;WriteMethodType=boolMod1/DIO8_UNIQUE_276resource=/crio_Mod1/DIO8_UNIQUE_276;0;ReadMethodType=bool;WriteMethodType=boolMod1/DPV1-CommandChn_UNIQUE_1312resource=/crio_Mod1/DPV1-CommandChn_UNIQUE_1312;0Mod1/ModuleErrorChn_UNIQUE_1417resource=/crio_Mod1/ModuleErrorChn_UNIQUE_1417;0Mod1/ProcInOutInfoChn_UNIQUE_1576resource=/crio_Mod1/ProcInOutInfoChn_UNIQUE_1576;0Mod1/ReqDataChn_UNIQUE_955resource=/crio_Mod1/ReqDataChn_UNIQUE_955;0Mod1/ResDataChn_UNIQUE_957resource=/crio_Mod1/ResDataChn_UNIQUE_957;0Mod1/StartupStatusChn_UNIQUE_1680resource=/crio_Mod1/StartupStatusChn_UNIQUE_1680;0Mod1/Status Interface_UNIQUE_1589resource=/crio_Mod1/Status Interface_UNIQUE_1589;0Mod1/Timing Interface_UNIQUE_1561resource=/crio_Mod1/Timing Interface_UNIQUE_1561;0Mod1[crioConfig.Begin]crio.Calibration=1,crio.Location=Slot 1,crio.Type=CS_cRIO-PBMS[crioConfig.End]Scan Clockresource=/Scan Clock;0;ReadMethodType=boolSleepresource=/Sleep;0;ReadMethodType=bool;WriteMethodType=boolSystem Resetresource=/System Reset;0;ReadMethodType=bool;WriteMethodType=boolToFPGA"ControlLogic=0;NumberOfElements=2053;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToFPGA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"ToHost"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToHost;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\TBD\ProfibusModules\source\FPGA Bitfiles\ProfibusModule_FPGA9074_FPGAMain_bIHCZjrjays.lvbitx</Property>
+				</Item>
+				<Item Name="Mod1" Type="RIO C Series Module">
+					<Property Name="crio.3rdParty" Type="Bool">true</Property>
+					<Property Name="crio.Calibration" Type="Str">1</Property>
+					<Property Name="crio.Location" Type="Str">Slot 1</Property>
+					<Property Name="crio.MDK2StyleSupport" Type="Bool">true</Property>
+					<Property Name="crio.SupportsDynamicRes" Type="Bool">false</Property>
+					<Property Name="crio.Type" Type="Str">CS_cRIO-PBMS</Property>
+					<Property Name="cRIOModule.EnableSpecialtyDigital" Type="Str">false</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{D78C6396-715E-4F3E-91FA-BD81E0B428B8}</Property>
+					<Item Name="DP-Master" Type="RIO Subresource">
+						<Property Name="FPGA.PersistentID" Type="Str">{D88DF703-1402-41B6-B04F-FDE6728E7936}</Property>
+					</Item>
+					<Item Name="DP-Slave" Type="RIO Subresource">
+						<Property Name="FPGA.PersistentID" Type="Str">{18553CDA-C265-40DE-A00B-D8A8920DCCF5}</Property>
+					</Item>
+					<Item Name="DPV1-Master" Type="RIO Subresource">
+						<Property Name="FPGA.PersistentID" Type="Str">{4B156214-99EB-4061-95BE-8774FEA15A43}</Property>
+					</Item>
+				</Item>
+				<Item Name="Mod1/AcyclicResIndicationChn_UNIQUE_2301" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/AcyclicResIndicationChn_UNIQUE_2301</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{291AC52B-243F-4C18-91D1-1318929D95B2}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/AutoSlaveModeChn_UNIQUE_1586" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/AutoSlaveModeChn_UNIQUE_1586</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{D1C3BCCE-A177-4BF5-9302-2D1B0D8C5272}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/Command Interface_UNIQUE_1648" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/Command Interface_UNIQUE_1648</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{1D637AF3-41B7-4554-B63B-394AF874A93C}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/Configuration Interface_UNIQUE_2313" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/Configuration Interface_UNIQUE_2313</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{08C8A962-53DA-4156-9C3D-F8E045ECEB0D}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/Debug Interface_UNIQUE_1432" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/Debug Interface_UNIQUE_1432</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{34C69109-1D87-4DB1-BC77-21DE882956BA}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO(7:0)_UNIQUE_462" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO(7:0)_UNIQUE_462</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{9EF158AC-F19A-4B9B-9954-06E5C865BF9F}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO0_UNIQUE_268" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO0_UNIQUE_268</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{39FEFA7E-A998-4FC8-8CA1-146FB55017C8}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO1_UNIQUE_269" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO1_UNIQUE_269</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{ED827093-E399-44E0-9901-DAE5790473E5}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO2_UNIQUE_270" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO2_UNIQUE_270</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{F79995E6-1A05-4A78-9135-A1E4534CE1D7}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO3_UNIQUE_271" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO3_UNIQUE_271</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{60A1C962-4754-401D-A8E7-7E8C8B7CFA85}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO4_UNIQUE_272" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO4_UNIQUE_272</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{A85DE5BD-CE6E-474C-B3D9-9886D32D5566}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO5_UNIQUE_273" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO5_UNIQUE_273</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{72D1B5A9-AC7B-4064-A3E8-331B19024E5F}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO6_UNIQUE_274" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO6_UNIQUE_274</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{5FCAB79C-F456-4F85-AE9D-BE64AF2BC16A}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO7_UNIQUE_275" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO7_UNIQUE_275</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{02A2A6D2-AA0C-4828-A0F9-40F310AC17FB}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DIO8_UNIQUE_276" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DIO8_UNIQUE_276</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{5C7CC19A-A7DA-4303-971D-84AFC3263761}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/DPV1-CommandChn_UNIQUE_1312" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/DPV1-CommandChn_UNIQUE_1312</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{4C19924A-93B6-464C-8AB8-0369E5219E5C}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/ModuleErrorChn_UNIQUE_1417" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/ModuleErrorChn_UNIQUE_1417</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{78D83851-1332-42D0-AE33-C57DAB5D86A6}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/ProcInOutInfoChn_UNIQUE_1576" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/ProcInOutInfoChn_UNIQUE_1576</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{1A7ED99B-E44B-4B22-A66E-B6A6C494C169}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/ReqDataChn_UNIQUE_955" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/ReqDataChn_UNIQUE_955</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{AB340561-AC68-41F0-A1FB-709076D6E77B}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/ResDataChn_UNIQUE_957" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/ResDataChn_UNIQUE_957</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{DB65305A-E11C-48B3-B58D-C2B825149D2F}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/StartupStatusChn_UNIQUE_1680" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/StartupStatusChn_UNIQUE_1680</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{CF5405B1-4989-4234-B740-FF91E5F8E23A}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/Status Interface_UNIQUE_1589" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/Status Interface_UNIQUE_1589</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{D9FB5292-B204-49BB-AACF-4E628D545DC1}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="Mod1/Timing Interface_UNIQUE_1561" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="resource">
+   <Value>/crio_Mod1/Timing Interface_UNIQUE_1561</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{3F98DFBB-06C1-400E-8972-77FE50EBF1EC}</Property>
+					<Property Name="HiddenEIO" Type="Bool">true</Property>
+				</Item>
+				<Item Name="ToFPGA" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">2053</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=2053;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToFPGA;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{2A84058E-BEF9-4B3F-BCF3-5CAF2A29BE5E}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">2053</Property>
+					<Property Name="Type" Type="UInt">1</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+				<Item Name="ToHost" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">4095</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=4095;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;ToHost;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{C4324E42-C8CC-446B-9249-9F9C86F3F3A0}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">2053</Property>
+					<Property Name="Type" Type="UInt">2</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
 				<Item Name="Dependencies" Type="Dependencies">
-					<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
+					<Item Name="vi.lib" Type="Folder">
+						<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+						<Item Name="NISE_CEF_TreeControl.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Configuration Framework/NISE_CEF_TreeControl.lvlib"/>
+					</Item>
+					<Item Name="dynamic profibus.lvlib" Type="Library" URL="../dynamic profibus/dynamic profibus.lvlib"/>
 					<Item Name="niFpgaCriticalErrorInLSC.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaCriticalErrorInLSC.vi"/>
 					<Item Name="niFpgaEmulationReportErrorSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaEmulationReportErrorSimple.vi"/>
 					<Item Name="niFpgaEmulationVisToLoad.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaEmulationVisToLoad.vi"/>
@@ -1855,6 +2146,7 @@ AddOutputFilter chunkFilter
 					<Item Name="niFpgaProcessEmulError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaProcessEmulError.vi"/>
 					<Item Name="niFpgaSctlEmulationGetInTimedLoop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaSctlEmulationGetInTimedLoop.vi"/>
 					<Item Name="niFpgaSetErrorForExecOnDevCompSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaSetErrorForExecOnDevCompSimple.vi"/>
+					<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
 					<Item Name="nirviCleanSpecificError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/nirviCleanSpecificError.vi"/>
 					<Item Name="nirviEmuReportErrorAndStop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuReportErrorAndStop.vi"/>
 					<Item Name="nirvififoEmulationCreateLock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Resource/nirvififoEmulationCreateLock.vi"/>
@@ -1870,7 +2162,37 @@ AddOutputFilter chunkFilter
 					<Item Name="nirviTopLevelTSTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/TimingSources/Configuration/Private/nirviTopLevelTSTag.vi"/>
 					<Item Name="nirviWaitOnOccurrenceBase.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/occurrence/nirviWaitOnOccurrenceBase.vi"/>
 				</Item>
-				<Item Name="Build Specifications" Type="Build"/>
+				<Item Name="Build Specifications" Type="Build">
+					<Item Name="FPGA Main" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
+						<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
+						<Property Name="BuildSpecDecription" Type="Str"></Property>
+						<Property Name="BuildSpecName" Type="Str">FPGA Main</Property>
+						<Property Name="Comp.BitfileName" Type="Str">ProfibusModule_FPGA9074_FPGAMain_bIHCZjrjays.lvbitx</Property>
+						<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
+						<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
+						<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
+						<Property Name="Comp.Version.Build" Type="Int">0</Property>
+						<Property Name="Comp.Version.Fix" Type="Int">0</Property>
+						<Property Name="Comp.Version.Major" Type="Int">1</Property>
+						<Property Name="Comp.Version.Minor" Type="Int">0</Property>
+						<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
+						<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">timing</Property>
+						<Property Name="Comp.Xilinx.MapEffort" Type="Str">high(timing)</Property>
+						<Property Name="Comp.Xilinx.ParEffort" Type="Str">high</Property>
+						<Property Name="Comp.Xilinx.SynthEffort" Type="Str">high</Property>
+						<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
+						<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
+						<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+						<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
+						<Property Name="ProjectPath" Type="Path">/C/TBD/ProfibusModules/source/Profibus Module.lvproj</Property>
+						<Property Name="RelativePath" Type="Bool">true</Property>
+						<Property Name="RunWhenLoaded" Type="Bool">false</Property>
+						<Property Name="SupportDownload" Type="Bool">true</Property>
+						<Property Name="SupportResourceEstimation" Type="Bool">true</Property>
+						<Property Name="TargetName" Type="Str">FPGA 9074</Property>
+						<Property Name="TopLevelVI" Type="Ref">/RT CompactRIO 9074/Chassis/FPGA 9074/FPGA Main.vi</Property>
+					</Item>
+				</Item>
 			</Item>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>

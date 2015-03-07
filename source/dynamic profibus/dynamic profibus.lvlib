@@ -31,6 +31,7 @@
 	<Item Name="fifo" Type="Folder">
 		<Item Name="write commands.vi" Type="VI" URL="../write commands.vi"/>
 		<Item Name="write raw commands.vi" Type="VI" URL="../write raw commands.vi"/>
+		<Item Name="start FIFOs.vi" Type="VI" URL="../start FIFOs.vi"/>
 		<Item Name="read responses.vi" Type="VI" URL="../read responses.vi"/>
 		<Item Name="read raw commands.vi" Type="VI" URL="../read raw commands.vi"/>
 	</Item>

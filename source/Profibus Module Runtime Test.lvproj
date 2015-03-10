@@ -436,37 +436,7 @@ AddOutputFilter chunkFilter
 					<Property Name="FPGA.PersistentID" Type="Str">{6624FA87-BE5A-4A28-8B70-B88B2A803700}</Property>
 					<Property Name="HiddenEIO" Type="Bool">true</Property>
 				</Item>
-				<Item Name="Dependencies" Type="Dependencies">
-					<Item Name="vi.lib" Type="Folder">
-						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
-					</Item>
-					<Item Name="niFpgaCriticalErrorInLSC.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaCriticalErrorInLSC.vi"/>
-					<Item Name="niFpgaEmulationReportErrorSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaEmulationReportErrorSimple.vi"/>
-					<Item Name="niFpgaEmulationVisToLoad.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaEmulationVisToLoad.vi"/>
-					<Item Name="niFpgaEmulError.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DesktopExecutionNode/niFpgaEmulError.ctl"/>
-					<Item Name="niFpgaGenCallStack.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaGenCallStack.vi"/>
-					<Item Name="niFpgaGetClockAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaGetClockAttributes.vi"/>
-					<Item Name="niFpgaGetClockAttributesFromContext.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaGetClockAttributesFromContext.vi"/>
-					<Item Name="niFpgaGetScratchAppInstance.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/niFpgaGetScratchAppInstance.vi"/>
-					<Item Name="niFpgaProcessEmulError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaProcessEmulError.vi"/>
-					<Item Name="niFpgaSctlEmulationGetInTimedLoop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Emulation/niFpgaSctlEmulationGetInTimedLoop.vi"/>
-					<Item Name="niFpgaSetErrorForExecOnDevCompSimple.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaSetErrorForExecOnDevCompSimple.vi"/>
-					<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
-					<Item Name="nirviCleanSpecificError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/nirviCleanSpecificError.vi"/>
-					<Item Name="nirviEmuReportErrorAndStop.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/eio/common/nirviEmuReportErrorAndStop.vi"/>
-					<Item Name="nirvififoEmulationCreateLock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Resource/nirvififoEmulationCreateLock.vi"/>
-					<Item Name="nirvififoEmulationReleaseLock.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Resource/nirvififoEmulationReleaseLock.vi"/>
-					<Item Name="nirviFillInErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviFillInErrorInfo.vi"/>
-					<Item Name="nirviGetToplevelTsByTargetItem.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/TimingSources/Configuration/Private/nirviGetToplevelTsByTargetItem.vi"/>
-					<Item Name="nirviReportUnexpectedCaseInternalError (Bool).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError (Bool).vi"/>
-					<Item Name="nirviReportUnexpectedCaseInternalError (String).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError (String).vi"/>
-					<Item Name="nirviReportUnexpectedCaseInternalError (U32).vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError (U32).vi"/>
-					<Item Name="nirviReportUnexpectedCaseInternalError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalError.vi"/>
-					<Item Name="nirviReportUnexpectedCaseInternalErrorHelper.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviReportUnexpectedCaseInternalErrorHelper.vi"/>
-					<Item Name="nirviTopLevelTSIsDefaultTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/TimingSources/Configuration/Private/nirviTopLevelTSIsDefaultTag.vi"/>
-					<Item Name="nirviTopLevelTSTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/TimingSources/Configuration/Private/nirviTopLevelTSTag.vi"/>
-					<Item Name="nirviWaitOnOccurrenceBase.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/occurrence/nirviWaitOnOccurrenceBase.vi"/>
-				</Item>
+				<Item Name="Dependencies" Type="Dependencies"/>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA Main" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
 						<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
@@ -501,50 +471,46 @@ AddOutputFilter chunkFilter
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="Profibus channel.lvclass" Type="LVClass" URL="../module/channel/Profibus channel.lvclass"/>
+		<Item Name="Profibus channel.lvclass" Type="LVClass" URL="../channel/Profibus channel.lvclass"/>
 		<Item Name="Profibus Module configuration.lvclass" Type="LVClass" URL="../module/configuration/Profibus Module configuration.lvclass"/>
 		<Item Name="Profibus Module runtime.lvclass" Type="LVClass" URL="../module/execution/Profibus Module runtime.lvclass"/>
 		<Item Name="Profibus Module tests.lvlib" Type="Library" URL="../testing/Profibus Module tests.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
-				<Item Name="CS_cRIO-PB_DP-Master_CyclicSlaveDiagData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_CyclicSlaveDiagData.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_FPGA-Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_FPGA-Reference.ctl"/>
-				<Item Name="CS_cRIO-PB_DP-Master_ProcessData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_ProcessData.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_ReadWrite.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_ReadWrite.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_SlaveDiagData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_SlaveDiagData.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_SlaveInfo.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_SlaveInfo.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Master_StartStop.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Master_StartStop.vi"/>
-				<Item Name="CS_cRIO-PB_DP-Slave_ReadWriteError.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/CS_cRIO-PB_DP-Slave_ReadWriteError.vi"/>
-				<Item Name="CS_PB_DP_SlaveDiagData.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/Examples/SubVIs/CS_PB_DP_SlaveDiagData.ctl"/>
-				<Item Name="CS_PB_DP_SlaveDiagResData.vi" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/Examples/SubVIs/CS_PB_DP_SlaveDiagResData.vi"/>
-				<Item Name="CS_PB_DP_TYPEDEF_SlaveDiagReqTyp.ctl" Type="VI" URL="/&lt;vilib&gt;/addons/Comsoft.lib/cRIO PBMS/Examples/SubVIs/CS_PB_DP_TYPEDEF_SlaveDiagReqTyp.ctl"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+				<Item Name="FPGA manager.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/FPGA manager/FPGA manager.lvlib"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
+				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
+				<Item Name="ms timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/standard timing source/ms timing source.lvclass"/>
+				<Item Name="ni_emb.dll" Type="Document" URL="/&lt;vilib&gt;/ni_emb.dll"/>
+				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
+				<Item Name="NI_Real-Time Target Support.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI_Real-Time Target Support.lvlib"/>
+				<Item Name="NISE_CEF_serializable configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Configuration Framework/serializable configuration/NISE_CEF_serializable configuration.lvclass"/>
+				<Item Name="NISE_error generator.vi" Type="VI" URL="/&lt;vilib&gt;/NI/Configuration Framework/error generator/NISE_error generator.vi"/>
 				<Item Name="tag bus.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Tag Bus/tag bus.lvlib"/>
 				<Item Name="TBM channel.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/channel/TBM channel.lvclass"/>
 				<Item Name="TBM configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/root configuration/TBM configuration.lvclass"/>
 				<Item Name="TBM module configuration.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/module configuration/TBM module configuration.lvclass"/>
 				<Item Name="TBM module execution interface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Tag Bus Module Framework/runtime/TBM module execution interface.lvclass"/>
 				<Item Name="TBM timing source.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/NI/Module Timing Source/timing source/TBM timing source.lvclass"/>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="determine required data sets.vi" Type="VI" URL="../execution/determine required data sets.vi"/>
+			<Item Name="dynamic profibus.lvlib" Type="Library" URL="../dynamic profibus/dynamic profibus.lvlib"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
 			<Item Name="niFpgaWaitOnOcc.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaWaitOnOcc.vi"/>
-			<Item Name="niLvFpga_Close_cRIO-9068.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9068/niLvFpga_Close_cRIO-9068.vi"/>
-			<Item Name="niLvFpga_Open_cRIO-9068.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9068/niLvFpga_Open_cRIO-9068.vi"/>
-			<Item Name="niLvFpga_Reset_cRIO-9068.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9068/niLvFpga_Reset_cRIO-9068.vi"/>
-			<Item Name="niLvFpga_Run_cRIO-9068.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9068/niLvFpga_Run_cRIO-9068.vi"/>
 			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
 			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
 			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
 			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
-			<Item Name="ProfibusModule_FPGATarget_FPGAMain_98nU8AqzUJM.lvbitx" Type="Document" URL="../FPGA Bitfiles/ProfibusModule_FPGATarget_FPGAMain_98nU8AqzUJM.lvbitx"/>
+			<Item Name="Profibus Module configuration.lvclass" Type="LVClass" URL="../configuration/Profibus Module configuration.lvclass"/>
+			<Item Name="Profibus Module runtime.lvclass" Type="LVClass" URL="../execution/Profibus Module runtime.lvclass"/>
+			<Item Name="read inputs from fpga.vi" Type="VI" URL="../execution/read inputs from fpga.vi"/>
+			<Item Name="send outputs to fpga.vi" Type="VI" URL="../execution/send outputs to fpga.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2015-01-14 11:45:56" Creator="Daniel" Comments="" ID="c499414b81343bd06e488a65b820697f">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2015-03-10 15:13:56" Creator="Daniel" Comments="" ID="14a488261d7d2fd84fea7d7d230f434f">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_tbm_profibus</Package_File_Name>
-    <Library_Version>2.0.1.3</Library_Version>
+    <Library_Version>3.0.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\..\releases\modules\worstbus</Library_Output_Folder>
@@ -36,7 +36,7 @@
       <Copyright/>
       <Packager>NI Systems Engineering</Packager>
       <URL/>
-      <Release_Notes>Update to CEF 2</Release_Notes>
+      <Release_Notes>Whole new driver interface layer. Bitfiles must be rebuilt.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -120,13 +120,16 @@
         <Path>Profibus Module Runtime Test.lvproj</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Profibus Module.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>sample_code_license_terms_20141101.txt</Path>
       </Exclusions>
       <Exclusions>
         <Path>testing</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>FPGA Bitfiles</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Profibus Module.lvproj</Path>
       </Exclusions>
     </Source_Files>
     <License_Agreement_Filepath>sample_code_license_terms_20141101.txt</License_Agreement_Filepath>

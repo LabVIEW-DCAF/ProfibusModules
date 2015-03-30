@@ -35,4 +35,5 @@
 		<Item Name="read responses.vi" Type="VI" URL="../read responses.vi"/>
 		<Item Name="read raw commands.vi" Type="VI" URL="../read raw commands.vi"/>
 	</Item>
+	<Item Name="ensure connection to slaves.vi" Type="VI" URL="../ensure connection to slaves.vi"/>
 </Library>

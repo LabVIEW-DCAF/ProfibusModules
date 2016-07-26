@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2016-07-25 14:39:10" Creator="Daniel" Comments="" ID="6bb5237c48dd62532a37d58bf42a70de">
+<VI_Package_Builder_Settings Version="0.6" Created_Date="2014-07-14 18:46:51" Modified_Date="2016-07-25 22:15:22" Creator="Daniel" Comments="" ID="18e0ef76c84cb4c29f6648b5987d319d">
   <Library_General_Settings>
     <Package_File_Name>ni_lib_dcaf_profibus</Package_File_Name>
     <Library_Version>3.0.0.1</Library_Version>
@@ -17,7 +17,7 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>ni_lib_dataeng &gt;=2.1.1.5</Additional_External_Dependencies>
+      <Additional_External_Dependencies>ni_frmwk_dcaf_core &gt;=1.0.0.5</Additional_External_Dependencies>
       <Package_Conflicts>ni_lib_tbm_edit_profi &gt;=1.0.0.7</Package_Conflicts>
       <Package_Conflicts>ni_lib_tbm_profi &gt;=1.0.1.5</Package_Conflicts>
     </Package_Dependencies>
